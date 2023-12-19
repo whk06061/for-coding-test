@@ -11,10 +11,8 @@ int main() {
     for (int i = 0; i < n; ++i) {
         cin >> score[i];
     }
-    double sum = accumulate(score.begin(), score.end(), 0.0);
     // 1. 평균 구하기
-    int avg;
-    avg = round(sum / n);
+    int avg = round(accumulate(score.begin(), score.end(), 0.0) / n);
     cout << avg << " ";
 
     // 2. 평균에 가장 가까운 학생은 몇 번째 학생인지 출력
