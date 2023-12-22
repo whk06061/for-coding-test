@@ -11,7 +11,6 @@ int myMax = -2147000000;
 
 void operate(int depth, int result) {
     if (depth == n) {
-        cout << result<<endl;
         if (result > myMax) myMax = result;
         if (result < myMin) myMin = result;
         return;
